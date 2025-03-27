@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;    }
+    .container{
+        width:100%;
+        height:100vh;
+        background-color: rgb(255, 127, 225);
+        padding:10px;
+
+    }
+    .to-dolist{
+        width:100%;
+        max-width:540px;
+        background: seagreen;
+        margin:100px auto 20px;
+        padding:40px 30px 70px;
+        border-radius: 10px;
+        
+    }
+    .to-dolist h2{
+       display:flex;
+       color:rgb(135, 176, 222);
+       align-items:center;
+       margin-bottom: 20px;
+    }
+   .row{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background:rgb(239, 227, 227);
+    border-radius: 30px;
+    padding-left:20px;
+    margin-bottom: 20px;
+   }
+   input{
+    flex:1;
+    background:transparent;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-weight:14px;
+
+   }
+   button{
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    font-size:16px;
+    background-color: #f7f076;
+    color:blue;
+   cursor: pointer;
+border-radius:30px;
+   }
+   ul li{
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    position:relative;
+
+   }
+   ul li::before{
+    content:'';
+    position:absolute;
+    height:28px;
+    width:28px;
+    border-radius:50px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/190/190411.png');
+    background-size: cover;
+    background-position:center;
+    left:10px;
+    top:12px;
+   }
+   ul li.checked{
+color:#555555;
+text-decoration:line-through;
+   }
+   ul li.checked::before{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/190/190411.png');
+   }
+   ul li span{
+    position:absolute;
+    right:0px;
+    top:5px;
+    width:40px;
+    height: 40px;
+    font-size:20px;
+    color:#555;
+    cursor:pointer;
+    line-height: 40px;
+    text-align: center;
+    border-radius:50%;
+   }
+   ul li span:hover{
+    background: #d99696;
+    border-radius:50px;
+    color:red;
+   }
